@@ -14,7 +14,7 @@ public class HomeController {
     }
 
     @GetMapping("/hello")
-    public Message StartMessage(@RequestParam(value="name", defaultValue = "World12345") String name) {
+    public Message StartMessage(@RequestParam(value="name", defaultValue = "World12345789") String name) {
         return new Message(String.format("Hello %s!", name));
     }
 
